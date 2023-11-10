@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Portfolio Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
+  <link rel="stylesheet" href="styles.css" />
+  <script src="script.js"></script>
+</head>
+
+<body>
+  <header>
+    <nav>
+      <div id="details">
+        <h2>Vladimir Samsonov</h2>
+        <a href="mailto:vsamson.my@gmail.com">
+          <p><i class="fa fa-envelope" aria-hidden="true"></i> vsamson.my@gmail.com</p>
+        </a>
+        <a href="tel:+18252886387">
+          <p><i class="fa-solid fa-phone"></i> +1(825)288-63-87</p>
+        </a>
+      </div>
+      <div id="links">
+        <a href="#about">About me</a>
+        <a href="#skills">Skills</a>
+        <a href="#projects">Projects</a>
+        <a href="#recommendations">Recommendations</a>
+      </div>
+    </nav>
+  </header>
+  <div id="about">
+    <img
+      src="https://media.licdn.com/dms/image/D5635AQHGnvGCKFntDg/profile-framedphoto-shrink_400_400/0/1687556863430?e=1700179200&v=beta&t=ntm_OmmzkmbjzIY9hB8jC11mTlxh3B-tXTOFnrjtM4s" />
+    <article>
+      <h1 class="titles">Hi, I'm Vladimir Samsonov!<i class="fa-solid fa-hand-spock"></i></h1>
+      <p>I am a full stack developer, who helps companies to create outstanding solutions for their customers. Being a
+        stakeholder for last three years, I created automation solutions, which saved more than 95% of my customers
+        time, and helped me and dozens of other people to become financially stable. I enjoy to help people and I am
+        passionate about creating innovative solutions for bigger problems. Contact me on LinkedIn If you are looking
+        for someone to support your company's growth.</p>
+    </article>
+  </div>
+  <h1 class="titles padded">Skills</h1>
+  <div id="skills">
+    <div class="skill-container">
+      <i class="fa-brands fa-html5"></i>
+      <p>HTML</p>
+      <p>2 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fab fa-js"></i>
+      <p>JavaScript</p>
+      <p>1.5 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fa-brands fa-java"></i>
+      <p>Java</p>
+      <p>.5 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fa-brands fa-react"></i>
+      <p>React</p>
+      <p>1.5 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fab fa-node"></i>
+      <p>Node.js</p>
+      <p>1.5 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fab fa-css3"></i>
+      <p>CSS</p>
+      <p>2 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fa-brands fa-python"></i>
+      <p>Python</p>
+      <p>2 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fab fa-microsoft"></i>
+      <p>Azure</p>
+      <p>1 years of experience</p>
+    </div>
+    <div class="skill-container">
+      <i class="fas fa-database"></i>
+      <p>SQL & NoSQL</p>
+      <p>2 years of experience</p>
+    </div>
+  </div>
+  <h1 class="titles padded">Projects</h1>
+  <div id="projects">
+    <ul>
+      <h3>This Portfolio Site</h3>
+      <li>Applied knowledge of HTML5, CSS3 and JavaScript to create dynamic and stylish portfolio site</li>
+      <hr />
+      <br />
+      <h3>Trading Automation Platform</h3>
+      <li>Created a platform to automate routine actions of traders, saved 95% of their time and doubled their's profit
+      </li>
+      <hr />
+      <br />
+      <h3>Custom Scripts for Thermal Coefficients Analysis</h3>
+      <li>While working with Ansys and Solidworks, created a custom scripts, adding new functionality to the programs.
+        Shortened the time needed to complete the analysis by 3 times</li>
+    </ul>
+  </div>
+  <h1 class="titles padded">Recommendations</h1>
+  <div id="recommendations">
+    <div class="recommendation-container">
+      <p><em>"Vladimir is a very quick learner and quickly grasps key concepts of Web development. He got a great
+          attitude & he is an excellent team player. He has a curious mind and asks the right questions. He takes
+          initiative within a team and has potentials to lead the team."</em></p>
+    </div>
+    <div class="recommendation-container">
+      <p><em>"Working with Vladimir has been an awesome experience. He is highly knowledgable and always goes the extra
+          step to make sure everything is right. For any future projects that need his expertise I would definitely want
+          to work with him again."</em></p>
+    </div>
+    <div class="recommendation-container">
+      <p><em>"I had worked along with Vladimir during the initial phase of our venture which needed Web development. He
+          is a committed resource who has in depth knowledge about the domain. He will be an asset for any
+          organisation!"</em></p>
+    </div>
+  </div>
+  <div id="add_reviews">
+    <h2>Leave a Recommendation</h2>
+    <form onsubmit="addReview(event)">
+      <input id="name_text" type="text" placeholder="Name (Optional)" />
+      <textarea id="text_area" name="text_area" rows="10" columns="30" placeholder="Message"></textarea>
+      <button id="btn_submit" type="submit">Submit</button>
+    </form>
+  </div>
+  <div class="popup" id="popup" class="flex_center">
+    <br />
+    <i class="fa-solid fa-check"></i>
+    <h3>Thank you for submitting your review!</h3>
+    <button onclick="showPopup(false)">Ok</button>
+  </div>
+  <a href="#"><i class="fa-solid fa-arrow-up" id="home"></i></a>
+</body>
+
+</html>
